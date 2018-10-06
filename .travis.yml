@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+- docker
+
+script:
+# build images
+- docker build -t docker-python-example:latest -f Dockerfile .
+# push images
+- docker login -u="$DOCKER_HUB_LOGIN" -p="$DOCKER_HUB_PASSWORD"
+- docker tag docker-python-example:latest maregu/docker-python-example:latest
+- docker push maregu/docker-python-example:latest
