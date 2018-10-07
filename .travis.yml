@@ -12,7 +12,7 @@ notifications:
     rooms:    
       - secure: tBm3RDx8eaeJHoyykSXyFkgPMx4zOqsltJsQQxUpU5WQm01fffzKd3HX4n5VmSrG73q7MU2glI2pW2wX+rV3vE3Jz/LUUD6g9R8p3NNAfdKIz77RLoLWmR3mmlWecB28Xk+cDuu10uURRE+JdiTrgmttqne+eiCF/tpQGB0KydQ9yWAW9DJMjnl29kmCbdntxZlxJL0OB5njOggyjA8u2WIhegwAa9nLwSAh45YAMjNT0wPMYrOWC6JUTIRdSqqGSTA9saLMD85e4Tal5zGvBz4Y+m1sszAlO/efxZcEIiBgvcBpGHHRncsqDlv9mIdyLnHYRU4tDLaV1m1Bn7iQ8kwAgfXk1073lkovG4RUVDNKZFx8gkKPHCaTXRp052CIISqT0HFSFpGFBOxD9Svh8ox/SQMPnKkMMPbexOjGuLdc8YgygAXkXX7wkUe6NIA6Xb4rdSVuOLmRkvslPQS3JqDGGb7QR0jzbhIr+31ocB3cbnz/HbNEEkEwkCiDG/rKT9nQQ814jP2UZDbz0NwcJR0nUTJKmecMmgtd3rvINJzmAb0laq1Nb6f5Re5EvyGb/HmjOnrkA74AMbd4b6F5IBpI4Zi2uWcPIilDiC9j4WoinYrahRNju9VVuqPlfmUpTz37zE1jYt9uxvp1WvB7FMq1MFtuMr/nbaWRNzMSjcI=
     template:
-      - "{\"user_id\": \"<@UD82T3PPC>\",\"repository\": \"%{repository_slug}\",\"result\": \"%{result}\",\"docker_image\": \"%{DOCKER_IMAGE}\",\"docker_image2\": \"$DOCKER_IMAGE\"}"
+      - "{\"user_id\": \"<@UD82T3PPC>\",\"repository\": \"%{repository_slug}\",\"result\": \"%{result}\",\"docker_image\": \"$DOCKER_IMAGE\"}"
 env:
   - DOCKER_IMAGE=maregu/docker-python-example
 
