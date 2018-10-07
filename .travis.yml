@@ -6,6 +6,7 @@ script:
 - docker login -u="$DOCKER_HUB_LOGIN" -p="$DOCKER_HUB_PASSWORD"
 - docker tag docker-python-example:latest $DOCKER_IMAGE:latest
 - docker push $DOCKER_IMAGE:latest
+
 notifications:
   slack:
     rooms:    
