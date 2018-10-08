@@ -14,5 +14,5 @@ notifications:
     template:
       - "{\"user_id\": \"<@UD82T3PPC>\",\"repository\": \"%{repository_slug}\",\"result\": \"%{result}\"}"
 env:
-  - DOCKER_IMAGE=maregu/docker-python-example
+  - DOCKER_IMAGE=martinaas/docker-python-example
 
